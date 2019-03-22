@@ -40,16 +40,7 @@ CREATE TABLE `mini_car_store` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mini_car_store`
---
 
-INSERT INTO `mini_car_store` (`manufacture_name`, `model`, `color`, `price`, `manufacturing_year`, `registration_number`, `sold_flag`, `url`) VALUES
-('SUZUKI', NULL, '', 0, 0, '', 'N', ''),
-('AUDI', 'Q3', 'GREY', 0, 2019, 'HO41-74856', 'Y', 'http://localhost/images/15532581221830968618.jpg'),
-('AUDI', 'Q3', 'WHITE', 0, 2018, 'OK45-74587', 'N', 'http://localhost/images/15532586451490725184.jpg'),
-('BENZ', 'I20', 'SILVER', 0, 2010, 'PL74-78946', 'N', 'http://localhost/images/15532586781313076906.jpg'),
-('AUDI', 'BALLENO', 'SILVER', 0, 2019, 'OK74-78524', 'N', '');
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
