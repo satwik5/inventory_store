@@ -6,7 +6,6 @@
 		<input id='manufac_name' name="man_name" type="text"  placeholder="Manufacture Name" /><br>
 		<input id='manufac_submit' name="submit" type="submit" value="Submit" />
 	</form>
-
 </center>
 
 <?php 
@@ -24,7 +23,7 @@ $man_names="select manufacture_name from mini_car_store where manufacture_name =
 if($result=mysqli_query($link,$man_names)){
 	$row=mysqli_fetch_row($result);
 	if($row[0]==$manu_name){
-		echo "<center><h3>Sorry ".ucfirst($manu_name)." already exists</h3></center>";
+		echo "<center><h3>Sorry!!! ".ucfirst($manu_name)." already exists</h3></center>";
 	}
 	else{
 		$sql = "insert into mini_car_store(manufacture_name,sold_flag) values('$manu_name','N')";
