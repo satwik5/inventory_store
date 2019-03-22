@@ -30,6 +30,7 @@ if($result=mysqli_query($link,$man_names)){
 		$sql = "insert into mini_car_store(manufacture_name,sold_flag) values('$manu_name','N')";
 		mysqli_query($link, $sql);
 		echo "<center><h3>Records Stored successfully.</h3></center>";
+		header( "refresh:3; url=car_details.php" ); 
 	}
 } 
 $link->close(); 
