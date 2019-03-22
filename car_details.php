@@ -69,6 +69,7 @@ $manufac_name=strtoupper($_POST['manufac_name']);
 						$delete_duplicate="DELETE FROM mini_car_store where manufacture_name='".$manufac_name."' and color='' ;";
 						mysqli_query($link,$delete_duplicate);
 						require 'delete_images.php';
+						header( "refresh:3; url=view_inventory.php" );
 					}
 					else{
 						echo "<center><h3>Sorry!!! Could not able to store the records.</h3></center>";
